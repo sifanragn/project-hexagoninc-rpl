@@ -35,7 +35,7 @@
 </template>
 
 <script setup>
-/* Kosong karena hanya tampilan */
+import api from '../plugins/api.js' // import axios instance
 </script>
 
 <style scoped>

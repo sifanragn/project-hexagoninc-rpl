@@ -49,6 +49,7 @@
 </template>
 
 <script>
+import api from '../../plugins/api.js'
 
 export default {
   name: "LoginView",
@@ -66,10 +67,12 @@ export default {
           password: this.password,
         });
 
+        // Simpan token & user di localStorage
         localStorage.setItem("token", res.data.token);
         localStorage.setItem("user", JSON.stringify(res.data.user));
 
-        this.$router.push("/dashboard");
+        // Redirect ke ToDoList setelah login
+        this.$router.push("/todolist");  // <-- diubah dari "/dashboard" ke "/todolist"
       } catch (err) {
         alert("Login gagal: " + (err.response?.data?.message || err.message));
       }
