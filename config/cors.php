@@ -7,8 +7,8 @@ return [
     'allowed_methods' => ['*'],
 
     'allowed_origins' => [
-        'http://localhost:5173',   // default port Vite (Vue 3)
-        'http://127.0.0.1:5173',   // kadang dipakai juga
+        'http://localhost:5174',   // default port Vite (Vue 3)
+        'http://127.0.0.1:5174',   // kadang dipakai juga
     ],
 
     'allowed_origins_patterns' => [],
